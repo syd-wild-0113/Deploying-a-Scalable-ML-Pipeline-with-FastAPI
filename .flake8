@@ -1,0 +1,18 @@
+[flake8]
+# Ignore long line lengths (E501) and line breaks before binary operators (W503)
+ignore = E501, W503
+
+# Prevent flake8 from scanning virtual environments, git, and build caches
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    env,
+    .dvc,
+    .pytest_cache,
+    build,
+    dist
+
+# Match standard black formatter / modern Python line limits if desired
+max-line-length = 88
