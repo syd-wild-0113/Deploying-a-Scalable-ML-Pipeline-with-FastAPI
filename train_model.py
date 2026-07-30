@@ -16,8 +16,7 @@ from ml.model import (
 # TODO: load the census.csv data
 # Adding in a line for dynamic path find, rather than a hard code
 current_dir = os.path.dirname(os.path.abspath(__file__))
-project_path = os.path.dirname(current_dir)
-data_path = os.path.join(project_path, "data", "census.csv")
+data_path = os.path.join(current_dir, "data", "census.csv")
 print(data_path)
 data = pd.read_csv(data_path)
 
@@ -63,9 +62,9 @@ X_test, y_test, _, _ = process_data(
 model = train_model(X_train, y_train)
 
 # save the model and the encoder
-model_path = os.path.join(project_path, "model", "model.pkl")
+model_path = os.path.join(current_dir, "model", "model.pkl")
 save_model(model, model_path)
-encoder_path = os.path.join(project_path, "model", "encoder.pkl")
+encoder_path = os.path.join(current_dir, "model", "encoder.pkl")
 save_model(encoder, encoder_path)
 
 # load the model
