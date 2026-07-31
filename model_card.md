@@ -11,13 +11,13 @@ For additional information see the Model Card paper: https://arxiv.org/pdf/1810.
 * **Artifacts:** Serialized model (model.pkl), OneHotEncoder (encoder.pkl), and LabelBinarizer(lb.pkl)
 
 ## Intended Use
-* **Primary Intended Use:** Predict whether an individual's annual income exceeds $50,000 based on demographic, educational, and employment attributes
+* **Primary Intended Use:** Predict whether an individual's annual income exceeds $50,000 based on demographic, educational, and employment attributes.
 * **Intended Users:** Data science students, automated reporting systems, and API consumer applications evaluating scalable model deployments.
 * **Out-of-Scope Uses:** This model should not be used for real-world employment decisions, credit lending evaluations, or individual financial assessments, as it was trained strictly on historical 1994 US Census data.
 
 ## Training Data
-* **Source:** 1994 US Census Bureau Income Dataset (commonly known as the "Adult" dataset)
-* **Train / Test Split:** 80% of the dataset was reserved for training (~26,048 samples)
+* **Source:** 1994 US Census Bureau Income Dataset (commonly known as the "Adult" dataset).
+* **Train / Test Split:** 80% of the dataset was reserved for training (~26,048 samples).
 * **Pre-Processing:** 
   * Cleaned leading/trailing whitespace from string entries.
   * Continuous features were used directly.
